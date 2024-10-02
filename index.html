@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de conversion</title>
+</head>
+<body>
+    <p> Déclarer une variable de type int et la convertir en string puis l’afficher par alerte</p>
+    <script>
+        let nombre = 2024; // Déclaration de la variable de type int
+        let nombreEnString = nombre.toString(); // Conversion en string
+        alert(nombreEnString); // Affichage par alerte
+    </script>
+<p>Déclarer une variable de type date afficher la date en prenant en compte la date d’aujourd’hui (jj-mm-yyyy)</p>
+<script>
+    let aujourdHui = new Date(); // Déclaration de la variable de type Date
+    let jour = aujourdHui.getDate();
+    let mois = aujourdHui.getMonth() + 1; // Les mois commencent à 0
+    let annee = aujourdHui.getFullYear();
+    let dateFormatee = jour.toString().padStart(2, '0') + '-' + mois.toString().padStart(2, '0') + '-' + annee;
+    alert(dateFormatee); // Affichage par alerte
+</script>
+</body>
+</html>
